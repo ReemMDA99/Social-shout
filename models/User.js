@@ -2,7 +2,6 @@
 const { Schema, model } = require('mongoose');
 // Use moment.js for timestamps
 const moment = require('moment');
-const { STRING_UNARY_OPERATORS } = require('@babel/types');
 
 // Create userSchema that has username, email, thoughts and friends
 const userSchema = new Schema ({
@@ -56,8 +55,10 @@ userSchema.virtual('friendCount').get(function() {
     return this.friends.length;
 });
 
-// Export the model
+// create the User model using the UserSchema
 const User = model('User', userSchema);
+
+// Export the model
 module.exports = User;
 
 
