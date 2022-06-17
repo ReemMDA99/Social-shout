@@ -17,14 +17,10 @@ const userSchema = new Schema ({
         // Must match a valid email address
         type: String,
         unique: true,
-        required: 'Email address is required',
+        required:true,
         trim: true,
-        //match: [/.+@.+\..+/, 'Please enter a valid e-mail address'],
-        validate: [validateEmail, "Please fill a valid email address"],
-        match: [
-            /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/,
-            "Please fill a valid email address",
-        ],
+        match: [/.+\@.+\..+/]
+        // validate: [validateEmail, "Please fill a valid email address"],
     },
     thoughts: [
         // Array of _id values referencing the Thought model

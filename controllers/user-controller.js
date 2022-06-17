@@ -14,7 +14,7 @@ const userController = {
         })
     // allows to remove __v from visuals
         .select('-__v')
-        .sort({_id: -1}) // descending order
+        // .sort({_id: -1}) // descending order
         .then(dbUserData => res.json(dbUserData))
         // catch error
         .catch(err => {
@@ -77,9 +77,8 @@ const userController = {
 
     // Delete user and users associated thoughts
     deleteUser({params}, res) {
-        User.findOneAndDelete ({
-            _id: params.id
-        })
+        User.findOneAndDelete (
+            {_id: params.id})
         .then(dbUserData => {
             if(!dbUserData) {
                 res.status(404)
@@ -88,22 +87,10 @@ const userController = {
             }
             res.json(dbUserData);
 
-        }).then(dbUserData => {
-            User.updateMany(
-                {_id: {$in: dbUserData.friends}},
-                {$pull: {friends: params.userId}}
-            )
-        }).then(() => {
-            // Bonus delete user's associated thoughts
-            Thoughts.deleteMany({
-                username: dbUserData.username
-            })
-        }).then(() => {
-            res.json({message: 'Deleted user'});
         }).catch(err => {
             console.log(err);
             res.status(400).json(err);
-        })
+        });
     },
 
     // /api/users/:userId/friends/:friendId
@@ -132,8 +119,8 @@ const userController = {
 
     // delete friend
     deleteFriend({ params }, res) {
-        User.findOneAndDelete(
-            {_id: params.id},
+        User.findOneAndUpdate(
+            {_id: params.userId},
             {$pull: {friends: params.friendId}},
             {new: true}
         )
