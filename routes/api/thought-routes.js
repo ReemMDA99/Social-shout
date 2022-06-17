@@ -12,7 +12,9 @@ const{
 }= require('../../controllers/thought-controller');
 
 // GET all and POST at /api/thoughts
-router.route('/').get(getAllThought).post(addThought);
+router.route('/').get(getAllThought)
+// api/thoughts/:userId
+router.route('/:userId').post(addThought)
 
 // GET one, PUT, and DELETE at /api/thoughts/:id
 router.route('/:id').get(getThoughtById).put(updateThought).delete(deleteThought);

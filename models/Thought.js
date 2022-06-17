@@ -1,7 +1,6 @@
 const { Schema, model, Types } = require('mongoose');
 const moment = require('moment');
 
-
 // Reaction schema
 const ReactionSchema = new Schema({
     // reactionId, reactionBody, username, createdAt
@@ -44,7 +43,7 @@ const ThoughtSchema = new Schema({
     // thoughtSchema includes thoughtText, createdAt, username, reactions
     thoughtText: {
         // string, required, Must be between 1 and 280 characters
-        type: Strings,
+        type: String,
         required: true,
         minlength: 1,
         maxlength: 280
@@ -60,19 +59,21 @@ const ThoughtSchema = new Schema({
     username: {
         // String, Required
         type: String,
-        required: "username is required!"
+        required: true,
     },
-    reactions: {
         // Array of nested documents created with the reactionSchema
         reactions: [ReactionSchema]
     },
-    
-    toJSON: {
-        virtuals: true,
-        getters: true
-    },
-    id: false
-});
+        
+        {
+            toJSON: {
+                virtuals: true,
+                getters: true
+            },
+            id: false
+        }
+
+);
 
 // Create a virtual called reactionCount that retrieves the length of the thought's reactions array field on query.
 ThoughtSchema.virtual('reactionCount').get(function () {
