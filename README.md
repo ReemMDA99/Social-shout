@@ -32,6 +32,7 @@ As a social media startup, I want an API for my social network that uses a NoSQL
     - Friends (used as a subdocument in User)
 
 ##  💾 Demo 
+[Getting started](https://drive.google.com/file/d/1LfQdkIILLOb08FNY-IOS8f18xaYBG_0B/view)
 
 [User](https://drive.google.com/file/d/1wWyTXb7LCoRyfBgNw4lIEEEdn5M0X6TX/view)
 
