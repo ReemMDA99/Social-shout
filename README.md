@@ -8,6 +8,16 @@ A REST API for a social network web application where users can share their thou
 
 As a social media startup, I want an API for my social network that uses a NoSQL database so that my website can handle large amounts of unstructured data.
 
+## Acceptance Criteria:
+
+- When you enter the command to invoke the application then the server is started and the Mongoose models are synced to the MongoDB database.
+
+- Testing API GET routes in Insomnia Core for users and thoughts return the data for each of these routes in a formatted JSON
+
+- Testing API POST, PUT, and DELETE routes in Insomnia Core are able to successfully create, update, and delete users and thoughts
+
+- Testing API POST and DELETE routes in Insomnia Core are able to successfully create and delete reactions to thoughts and add and remove friends to a user’s friend list.
+
 ## 💻 Usage
 
 - Make sure you have MongoDB installed on your machine (
@@ -23,7 +33,7 @@ As a social media startup, I want an API for my social network that uses a NoSQL
 
 ##  💾 Demo 
 
-![Video]()
+![Video](./)
 
 ## ScreenShots
 
@@ -59,10 +69,10 @@ As a social media startup, I want an API for my social network that uses a NoSQL
 - mongoose
 
 ## Testing
-✏️ No current testing
+✏️ Test using Insomnia
 
 ### Questions
 
-GitHub Submission url: ![GitHub](https://github.com/ReemMDA99/Social-shout)
+GitHub Submission url: (https://github.com/ReemMDA99/Social-shout/)
 
 ✉️ If you have questions, email me at reem.mda0909@gmail.com or reach out on GitHub.
