@@ -33,9 +33,20 @@ As a social media startup, I want an API for my social network that uses a NoSQL
 
 ##  💾 Demo 
 
-![Video](./)
+[User](https://drive.google.com/file/d/1wWyTXb7LCoRyfBgNw4lIEEEdn5M0X6TX/view)
 
-## ScreenShots
+[Friend](https://drive.google.com/file/d/1u9W81dwXDS0K3FvrUUhVDrSlDO-XOb7u/view)
+
+[Thought](https://drive.google.com/file/d/1kPT63NTn7TJsDcqBfEHm1Zbj-vsWr4KY/view)
+
+[Reaction](https://drive.google.com/file/d/1LfQdkIILLOb08FNY-IOS8f18xaYBG_0B/view)
+
+## GIFS
+
+![User](./assets/USERS.gif)
+![Friend](./assets/FRIENDS.gif)
+![Thought](./assets/THOUGHTS.gif)
+![Reaction](./assets/REACTION.gif)
 
 ## Endpoints
 
@@ -64,11 +75,12 @@ As a social media startup, I want an API for my social network that uses a NoSQL
 
 ### Packages
 
-- express
-- moment
-- mongoose
+- express - npm install express
+- moment - npm install moment
+- mongoose - npm install mongoose
 
 ## Testing
+
 ✏️ Test using Insomnia
 
 ### Questions
