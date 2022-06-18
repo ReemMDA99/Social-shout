@@ -42,11 +42,15 @@ As a social media startup, I want an API for my social network that uses a NoSQL
 
 [Reaction](https://drive.google.com/file/d/1LfQdkIILLOb08FNY-IOS8f18xaYBG_0B/view)
 
-## GIFS
+## GIF
 
+### User
 ![User](./assets/USERS.gif)
+### Friend
 ![Friend](./assets/FRIENDS.gif)
+### Thought
 ![Thought](./assets/THOUGHTS.gif)
+### Reaction
 ![Reaction](./assets/REACTION.gif)
 
 ## Endpoints
@@ -84,8 +88,10 @@ As a social media startup, I want an API for my social network that uses a NoSQL
 
 ✏️ Test using Insomnia
 
-### Questions
+### Submissions
 
-GitHub Submission url: (https://github.com/ReemMDA99/Social-shout/)
+[GitHub Submission url](https://github.com/ReemMDA99/Social-shout/)
+
+[Google Drive Demo(merged)](https://drive.google.com/file/d/1IhJVkSJAiQ6PSQuOKd5XvSsvVrhQgBLf/view?usp=sharing)
 
 ✉️ If you have questions, email me at reem.mda0909@gmail.com or reach out on GitHub.
